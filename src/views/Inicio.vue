@@ -13,21 +13,23 @@
 
     <div class="contenido">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div
             v-for="item of desarrolloContenidosData"
             :key="'desarrollo-' + item.nombreRuta"
             class="col-3 mb-4"
           >
             <router-link :to="{ name: item.nombreRuta }">
-              <div class="contenido__tarjeta tarjeta shadow">
+              <div class="contenido__tarjeta tarjeta shadow h-100">
                 <div
                   class="contenido__tarjeta__img"
                   :style="{
                     'background-image': item.img ? `url(${item.img})` : 'none',
                   }"
                 />
-                <div class="p-3 text-center">
+                <div
+                  class="p-3 text-center d-flex flex-column justify-content-center"
+                >
                   <div
                     class="contenido__tarjeta__titulo mb-2 text-bold "
                     v-html="item.titulo"

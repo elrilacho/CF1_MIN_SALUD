@@ -3,14 +3,23 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 20%
+    right: 70%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
-
+    top: 21%
+    right: 25%
+  &-3
+    animation: float1 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 71%
+    right: 70%
+  &-4
+    animation: float1 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 67%
+    right: 28%
 
 @keyframes float1
   0%
@@ -18,3 +27,61 @@
 
   100%
     transform: translateY(0px)
+span.color-acento-botones
+  font-weight: bold
+  background-color: $color-acento-botones
+  padding: 1px
+span.color-primario
+  font-weight: bold
+  color: #0F5FFE
+
+.titulo-principal__numero, .titulo-principal__numero:before
+  background-color: #0F5FFE
+.titulo-principal__numero span
+  color: white
+.mn
+  margin: 0 -10rem
+  padding: 3rem 10rem
+.contenido_curso
+  padding: 3rem 10rem
+.tarjeta-cita
+  position: relative
+  &__comilla1
+    position: absolute
+    width: 77px
+    top: 0
+    left: 0
+    transform: translate(30px, -10px)
+  &__comilla2
+    position: absolute
+    width: 77px
+    bottom: 0
+    right: 0
+    transform: translate(-30px, 10px)
+.bg-tema-1
+  background-image: url("../assets/curso/bg-tema-1.svg")
+  background-position: start
+  background-repeat: no-repeat
+  background-size: contain
+.bg-info
+  background-image: url("../assets/curso/bg-info.svg")
+  background-position: start
+  background-repeat: no-repeat
+  background-size: cover
+.tarjeta-icono
+  height: 100%
+  background-color: #3c1c74
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  transition: background-color .2s ease-in-out
+  p
+    transition: color .2s ease-in-out
+    color: white
+  img
+    width: 55px
+  &:hover
+    background-color: #f7df3f
+    p
+      color: $color-sistema-texto

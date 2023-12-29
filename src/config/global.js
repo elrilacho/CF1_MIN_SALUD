@@ -1,19 +1,28 @@
 export default {
   global: {
     componenteFormativo:
-      'Componente Formativo con un nombre extremadamente largo y extenso',
+      'Orientaciones técnicas para la atención en Salud de las personas de los sectores LGBTIQ+',
     descripcionCurso:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis vestibulum quam bibendum varius.<br/><br/>Quisque pretium at nulla sit amet placerat. Vestibulum consequat suscipit accumsan. Proin pharetra congue enim et tempus. Sed sodales dui volutpat, placerat tellus accumsan, semper est. Phasellus nec lorem elementum, mattis quam eget, vestibulum nibh. Sed.',
+      ' El Sistema General de Seguridad Social en Salud, de carácter obligatorio, busca garantizar una prestación de servicios de salud pertinente, accesible, continua, oportuna y segura. Ha experimentado actualizaciones para mejorar la calidad del servicio. Con el Plan Decenal de Salud Pública 2022-2031, se enfoca en la dignidad humana, reconociendo la diversidad de las personas. Este enfoque se extiende al personal de salud para reducir la discriminación y asegurar los derechos de las personas LGBTIQ+ y de aquellos con orientaciones sexuales e identidades de género no hegemónicas',
     imagenBannerPrincipal: require('@/assets/curso/banner-principal.png'),
-    fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.jpg'),
+    fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
+    fondoBannerInterno: require('@/assets/curso/portada/interno.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/a1.png'),
       },
       {
         clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/banner-principal-decorativo-2.svg'),
+        imagen: require('@/assets/curso/portada/a2.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3', 'd-none', 'd-lg-block'],
+        imagen: require('@/assets/curso/portada/a3.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-4'],
+        imagen: require('@/assets/curso/portada/a4.png'),
       },
     ],
   },
@@ -24,20 +33,21 @@ export default {
         icono: 'fas fa-home',
         titulo: 'Volver al inici',
       },
-      // {
-      //   nombreRuta: 'introduccion',
-      //   icono: 'fas fa-info-circle',
-      //   titulo: 'Introducció',
-      //   img: require('@/assets/curso/medicos-alegres-papel.jpg'),
-      //   desarrolloContenidos: true,
-      // },
+      {
+        nombreRuta: 'introduccion',
+        icono: 'fas fa-info-circle',
+        titulo: 'Introducció',
+        img: require('@/assets/curso/portada/p1.png'),
+        desarrolloContenidos: true,
+      },
       {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
         titulo: 'Tema 1',
-        subTitulo: 'Vigilancia en Salud',
-        img: require('@/assets/curso/medicos-alegres-papel.jpg'),
+        subTitulo:
+          '1. Normas a nivel nacional e internacional en atención a población LGTBIQ+ ',
+        img: require('@/assets/curso/portada/p2.png'),
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -155,8 +165,9 @@ export default {
         icono: 'far fa-file-alt',
         numero: '2',
         titulo: 'Tema 2',
-        subTitulo: 'Vigilancia en Salud',
-        img: require('@/assets/curso/medicos-alegres-papel.jpg'),
+        subTitulo:
+          '2. Conceptos y definiciones de las categorías a partir de la Política Pública LGBTI',
+        img: require('@/assets/curso/portada/p3.png'),
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -202,8 +213,8 @@ export default {
         icono: 'far fa-file-alt',
         numero: '3',
         titulo: 'Tema 3',
-        subTitulo: 'Vigilancia en Salud',
-        img: require('@/assets/curso/medicos-alegres-papel.jpg'),
+        subTitulo: '3. Barreras en el proceso de atención ',
+        img: require('@/assets/curso/portada/p4.png'),
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -247,34 +258,20 @@ export default {
       },
       {
         nombreRuta: 'tema4',
-        icono: 'fas fa-info-circle',
+        icono: 'far fa-file-alt',
+        numero: '4',
         titulo: 'Tema 4',
-        subTitulo: 'Vigilancia en Salud',
-        img: require('@/assets/curso/medicos-alegres-papel.jpg'),
+        subTitulo: '4. Orientaciones técnicas ',
+        img: require('@/assets/curso/portada/p4.png'),
         desarrolloContenidos: true,
       },
-      {
-        nombreRuta: 'tema5',
-        icono: 'fas fa-info-circle',
-        titulo: 'Tema 5',
-        subTitulo: 'Vigilancia en Salud',
-        img: require('@/assets/curso/medicos-alegres-papel.jpg'),
-        desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'tema6',
-        icono: 'fas fa-info-circle',
-        titulo: 'Tema 6',
-        subTitulo: 'Vigilancia en Salud',
-        img: require('@/assets/curso/medicos-alegres-papel.jpg'),
-        desarrolloContenidos: true,
-      },
+
       {
         nombreRuta: 'sintesis',
         icono: 'fas fa-info-circle',
         titulo: 'Síntesis',
         subTitulo: 'Vigilancia en Salud',
-        img: require('@/assets/curso/medicos-alegres-papel.jpg'),
+        img: require('@/assets/curso/portada/p5.png'),
         desarrolloContenidos: true,
       },
       {
@@ -282,7 +279,7 @@ export default {
         icono: 'fas fa-info-circle',
         titulo: 'Actividad didáctica',
         subTitulo: 'Vigilancia en Salud',
-        img: require('@/assets/curso/medicos-alegres-papel.jpg'),
+        img: require('@/assets/curso/portada/p6.png'),
         desarrolloContenidos: true,
       },
     ],
