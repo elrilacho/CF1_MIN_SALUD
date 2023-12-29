@@ -54,13 +54,12 @@
           img(src='@/assets/curso/8.svg', alt='').me-2
           p.mb-0 Salud y educación
     p.mb-5(data-aos='fade-right') A continuación, se presenta un resumen con otras normas internacionales de derechos humanos frente a la eliminación de la violencia y discriminación hacia las personas que componen los sectores LGBTIQ+, y orientaciones sexuales e identidades de género no hegemónicas, las cuales puede consultar para ampliar la información al respecto:
-    .bg-info.mn
-      ImagenInfografica.color-secundario
+    .bg-info.mn.pb-0
+      ImagenInfografica.color-acento-botones
           template(v-slot:imagen)
             figure
               img(src='@/assets/curso/9.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-          .tarjeta.color-acento-botones.p-3(x="20%" y="20%" numero="1")
+          .tarjeta.color-acento-botones.p-3(x="20%" y="20%" numero="+")
             .h5.mb-2 titulo
             p Lorem ipsum dolor Curabitur vestibulum tortor quis nisi
 
