@@ -63,3 +63,25 @@ span.color-primario
   background-position: start
   background-repeat: no-repeat
   background-size: contain
+.bg-info
+  background-image: url("../assets/curso/bg-info.svg")
+  background-position: start
+  background-repeat: no-repeat
+  background-size: cover
+.tarjeta-icono
+  height: 100%
+  background-color: #3c1c74
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  transition: background-color .2s ease-in-out
+  p
+    transition: color .2s ease-in-out
+    color: white
+  img
+    width: 55px
+  &:hover
+    background-color: #f7df3f
+    p
+      color: $color-sistema-texto

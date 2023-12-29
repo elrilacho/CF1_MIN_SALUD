@@ -36,10 +36,33 @@
         .col-lg-7.mb-lg-0.mb-5(data-aos="fade-right")
           p.mb-0.text-white.p-4 El Programa de las Naciones Unidas para el Desarrollo (PNDU) manifestó su compromiso de ejercer el liderazgo para la inclusión de personas LGBTI, estrategia que contempla 5 dimensiones catalogadas como prioritarias y evaluadas mediante el índice de inclusión. Según la Nota Conceptual del Índice de Inclusión LGBTI, (2016), las estrategias corresponden con: 
         .col-lg-5.col-7: img(src='@/assets/curso/4.svg', alt='' style="margin-top: -2rem")
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-4.mb-lg-0.mb-3
-        .tarjeta-icono.p-3
-
+    .row.justify-content-center.mb-5.g-2
+      .col-lg-3.mb-lg-0.mb-3
+        .tarjeta.tarjeta-icono.p-4
+          img(src='@/assets/curso/5.svg', alt='').me-2
+          p.mb-0 Participación política y cívica. 
+      .col-lg-3.mb-lg-0.mb-3
+        .tarjeta.tarjeta-icono.p-4
+          img(src='@/assets/curso/6.svg', alt='').me-2
+          p.mb-0 Bienestar económico. 
+      .col-lg-3.mb-lg-0.mb-3
+        .tarjeta.tarjeta-icono.p-4
+          img(src='@/assets/curso/7.svg', alt='').me-2
+          p.mb-0 Seguridad personal y violencia. 
+      .col-lg-3.mb-lg-0.mb-3
+        .tarjeta.tarjeta-icono.p-4
+          img(src='@/assets/curso/8.svg', alt='').me-2
+          p.mb-0 Salud y educación
+    p.mb-5(data-aos='fade-right') A continuación, se presenta un resumen con otras normas internacionales de derechos humanos frente a la eliminación de la violencia y discriminación hacia las personas que componen los sectores LGBTIQ+, y orientaciones sexuales e identidades de género no hegemónicas, las cuales puede consultar para ampliar la información al respecto:
+    .bg-info.mn
+      ImagenInfografica.color-secundario
+          template(v-slot:imagen)
+            figure
+              img(src='@/assets/curso/9.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .tarjeta.color-acento-botones.p-3(x="20%" y="20%" numero="1")
+            .h5.mb-2 titulo
+            p Lorem ipsum dolor Curabitur vestibulum tortor quis nisi
 
   
 </template>
